@@ -69,7 +69,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     cell.name.text = appInfo.name
     cell.price.text = formatPriceInCents(price: appInfo.price)
     cell.imageGame.image = UIImage(named: "star")
-    cell.imageGame.downloaded(from: appInfo.imageURL, contentMode: .scaleAspectFill, currentLine: indexPath.row)
+    cell.imageGame.downloaded(from: appInfo.imageURL, contentMode: .scaleAspectFill)
     return cell
   }
   
